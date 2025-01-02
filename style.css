@@ -107,7 +107,7 @@ html, body{
 
 .search ion-icon{
     padding: 17px 17px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .search-h1 h1{
@@ -200,6 +200,14 @@ html, body{
 @media (max-width:500px) {
     .search-h1{
         padding-bottom: 400px;
+    }
+
+    .title{
+        font-size: 1em;
+    }
+
+    .input, .search ion-icon{
+        font-size: 0.8em;
     }
 
     .darkBtn{
