@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <video autoplay muted loop plays-inline class="video"></video>
+
+        <div class="msg">Nothing to show here!</div>
+        <button class="darkBtn" onclick="darkMode()"><ion-icon class="moon" name="moon"></ion-icon></button>
+
+        <div class="search-info">
+            <div class="search-h1">
+                <h1 class="title">Weather App</h1>
+                <div class="search">
+                    <input class="input" type="text" placeholder="Enter city">
+                    <button type="submit" onclick="change()"><ion-icon name="search-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="info">
+                <h1 class="city"></h1>
+                <div class="temp">
+                    <ion-icon class="iconT" name="thermometer-outline"></ion-icon>
+                    <h1 class="temp-reading">30c</h1>
+                </div>
+                <div class="weather-info">
+                    <div class="feels-like">
+                        <ion-icon class="iconW" name="accessibility-outline"></ion-icon>
+                        <h1 class="FL-reading">20c</h1>
+                    </div>
+                    <div class="humidity">
+                        <ion-icon class="iconW" name="water-outline"></ion-icon>
+                        <h1 class="humidity-reading">70</h1>
+                    </div>
+                    <div  class="wSpeed">
+                        <ion-icon class="iconW" name="speedometer-outline"></ion-icon>
+                        <h1 class="speed-reading">5Km/h</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
